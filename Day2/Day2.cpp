@@ -8,7 +8,7 @@ int missingNum(vector<int> &nums)
     for (int i = 0; i < n; i++)
     {
         xor1 ^= nums[i];
-        xor2 ^= i+1;
+        xor2 ^= i;
     }
     xor2 ^= n+1;
     return xor1 ^ xor2;
@@ -16,8 +16,8 @@ int missingNum(vector<int> &nums)
 int main()
 {
     // vector<int> nums = {3, 5, 1, 2};
-    vector<int> nums = {1};
-    // vector<int> nums;
+    // vector<int> nums = {1};
+    vector<int> nums;
     for (int i = 1; i < 100000; i++)
         nums.push_back(i);
     cout << missingNum(nums) << endl;
