@@ -1,14 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void reverse(string &str,int i,int j){
-    while(i<j){
-        swap(str[i],str[j]);
-        i++;
-        j--;
-    }
-}
-
 string reverseWordByWord(string str){
     string result="";
     int i = 0;
